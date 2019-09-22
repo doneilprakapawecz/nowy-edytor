@@ -17,6 +17,21 @@ if ('serviceWorker' in navigator) {
 // place your code below
 
 
-console.log(`Hello world!`);
+const button_1=document.querySelector('.button1--js');
+const button_2=document.querySelector('.button2--js');
+const textArea=document.querySelector('.writing--js');
+
+button_2.addEventListener('click',(e) => {
+  localStorage.setItem('pole',textArea.value);
+})
+button_1.addEventListener('click',(e) => {
+  if(localStorage.getItem('pole'))textArea.value=localStorage.getItem('pole');
+  console.log(textArea.value);
+})
+
+
+//if(localStorage.getItem('pole'))textArea.value=localStorage.getItem('pole');
+
+
 
 

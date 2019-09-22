@@ -11,6 +11,36 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background:rgb(68, 68, 141);
+}
+
+.main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrapper{
+  width: 30%;
+  &__writing{
+    width: 100%;
+    height: 20vw;
+    border-radius: 15px;
+  }
+  &__buttons{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+  }
+  &__button{
+    border-radius: 5px;
+    width: 30%;
+    &--1{
+      background: rgb(231, 71, 71)
+    }
+    &--2{
+      background: rgb(34, 230, 34);
+    }
+  }
 }
