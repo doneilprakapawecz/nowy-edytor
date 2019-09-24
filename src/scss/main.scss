@@ -22,10 +22,14 @@ body {
 }
 .wrapper{
   width: 30%;
+  &__header{
+    color:rgb(0, 255, 128);
+    margin: 0 0 3px 0;
+  }
   &__writing{
     width: 100%;
     height: 20vw;
-    border-radius: 15px;
+    border-radius: 12px;
   }
   &__buttons{
     display: flex;
@@ -37,10 +41,21 @@ body {
     border-radius: 5px;
     width: 30%;
     &--1{
-      background: rgb(231, 71, 71)
+      background: rgb(216, 65, 65);
+      transition:background 0.7s ease-in-out, color 1s ease-in-out ;
+     
+      &:hover{
+        background:rgb(54, 2, 2); 
+        color: azure;
+      }
     }
     &--2{
       background: rgb(34, 230, 34);
+      transition:background 0.7s ease-in-out, color 1s ease-in-out ;
+      &:hover{
+        background: rgb(5, 66, 5);
+        color: azure;
+      }
     }
   }
 }
